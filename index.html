@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cross Sell ML model</title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="main">
+        <div class="container">
+            <div class="signup-content">
+                <div class="signup-img">
+                    <img src="images/image.png" alt="">
+                </div>
+                
+                <div class="signup-form">
+                    <form method="POST" class="register-form" id="register-form">
+                        <h2>Cross Sell Prediction Form</h2>
+                        
+                            <div class="form-group">
+                                <label for="name">Name :</label>
+                                <input type="text" name="name" id="name" required/>
+                            </div>
+                        
+                        <div class="form-radio">
+                            <label for="gender" class="radio-label">Gender :</label>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="male" checked>
+                                <label for="male">Male</label>
+                                <span class="check"></span>
+                            </div>
+                            <div class="form-radio-item">
+                                <input type="radio" name="gender" id="female">
+                                <label for="female">Female</label>
+                                <span class="check"></span>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="age">Age</label>
+                            <input type="text" name="age" id="age">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="license">Driving License :</label>
+                                <div class="form-select">
+                                    <select name="license" id="license">
+                                        <option value="">Select</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="choice">Previously Insured :</label>
+                                <div class="form-select">
+                                    <select name="choice" id="choice">
+                                        <option value="">Select</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="birth_date">Region Code(0-64) :</label>
+                            <input type="text" name="birth_date" id="birth_date">
+                        </div>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="course">Vehicle Age :</label>
+                                <div class="form-select">
+                                    <select name="course" id="course">
+                                        <option value="">Select</option>
+                                        <option value="1_year">> 1 Year</option>
+                                        <option value="1-2_years">1-2 Year</option>
+                                        <option value="2_years">< 2 Year</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="damage">Vehicle Previously Damaged :</label>
+                                <div class="form-select">
+                                    <select name="damage" id="damage">
+                                        <option value="">Select</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                                    <span class="select-icon"><i class="zmdi zmdi-chevron-down"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                <label for="premium">Annual_Premium</label>
+                                <input type="text" name="premium" id="premium" required/>
+                            </div>
+                            <div class="form-group">
+                                <label for="policy">Policy_Sales_Channel</label>
+                                <input type="text" name="policy" id="policy" required/>
+                            </div>
+                        
+                        <div class="form-submit">
+                            <a href="index2.html">
+                                <input type="submit" value="Reset All" class="submit" name="reset" id="reset" />
+                            </a>
+                            <input type="submit" value="Submit Form" class="submit" name="submit" id="submit" />
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>  
+
+    </div>
+
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+</html>
